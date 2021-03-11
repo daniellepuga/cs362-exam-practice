@@ -1,4 +1,7 @@
 class Game
+
+  attr_reader :player
+  
   def initialize
     @started = false
   end
@@ -7,7 +10,7 @@ class Game
     @started
   end
 
-  def start; 
+  def start
   end
-  
+
 end

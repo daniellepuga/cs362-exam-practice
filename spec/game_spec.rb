@@ -1,9 +1,8 @@
 require_relative '../lib/game'
 
 describe 'A game' do
-  let(:game) do
-    Game.new
-  end
+  let(:game) { Game.new }
+  let(:player) { Player.new }
 
   it 'exists' do
     game
@@ -17,4 +16,7 @@ describe 'A game' do
     expect(game).to_not be_started
   end
 
+  it 'has a player' do
+    expect(game).to respond_to(:player)
+  end
 end
